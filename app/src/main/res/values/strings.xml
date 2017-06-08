@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VrticCoa</string>
+
+
+    <string-array name="spinner_options">
+        <item>"Nikola Drazic", nikoladrazic88@gmail.com</item>
+        <item>marijakaka@gmail.com</item>
+        <item>"Marija Skrbic",marijakaka@gmail.com</item>
+        <item>marijakaka@gmail.com</item>
+    </string-array>
+
+
+</resources>
