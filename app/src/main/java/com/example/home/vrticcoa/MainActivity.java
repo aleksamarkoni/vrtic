@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements MvpView.View {
             }
         });
 
-            mBasePresenter.attach
+        // mBasePresenter.attachView();
+        //mBasePresenter.loadCards();
 
     }
 

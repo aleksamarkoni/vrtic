@@ -12,12 +12,12 @@ import java.util.List;
  */
 public class BasePresenter<R extends MvpView> implements MvpView.BasePresenter {
 
-    private final MvpView.View View;
+    private final MvpView.View mView;
     private List<Card>cards;
 
 
-    public BasePresenter(MvpView.View View) {
-        this.View = View;
+    public BasePresenter(MvpView.View mView) {
+        this.mView = mView;
     }
 
 
@@ -25,7 +25,13 @@ public class BasePresenter<R extends MvpView> implements MvpView.BasePresenter {
 
     @Override
     public void OnCardClick() {
-        View.displayMessage();
+        mView.displayMessage();
+        mView.displayCards(cards);
+
+    }
+
+    public void loadCards(){
+        createCards();
 
     }
 
